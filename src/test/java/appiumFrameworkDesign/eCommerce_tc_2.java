@@ -32,6 +32,7 @@ public class eCommerce_tc_2 extends AndroidBaseTest{
 	@BeforeMethod
 	public void preSetup()
 	{
+		System.out.println("1");
 		//screen to home page
 		Activity activity = new Activity("com.androidsample.generalstore", "com.androidsample.generalstore.MainActivity");
 		((JavascriptExecutor) driver).executeScript("mobile: startActivity", ImmutableMap.of("intent","com.androidsample.generalstore/com.androidsample.generalstore.MainActivity"));		
